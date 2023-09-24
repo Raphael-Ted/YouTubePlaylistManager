@@ -18,7 +18,7 @@ class PlayList(models.Model):
     last_checked = models.DateTimeField("last checked")
 
     def get_pl_id(self):
-        return get_pl_Id_from_url(self.link)
+        return get_pl_Id_from_url(self.url)
 
 
     def __str__(self):
